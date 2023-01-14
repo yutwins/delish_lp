@@ -1,0 +1,12 @@
+@use "../foundation/global" as *;
+
+.contact {
+    width: 26.4%;
+    max-width: 338px;
+    height: 724px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}

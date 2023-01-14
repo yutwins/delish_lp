@@ -1,0 +1,45 @@
+@use "../foundation/global" as *;
+
+.header {
+    width: calc(100% - 26.4%); // お問い合わせフォーム部分の幅を引く
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-bottom: 1px solid $gray_color01;
+
+    &-inner {
+        height: 100%;
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-logoArea {
+        width: 160px;
+    }
+    &__logo {
+        width: 100%;
+        height: auto;
+    }
+
+    &-ul {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        padding-right: 18px;
+    }
+
+    &__list {
+
+    }
+    &__listItem {
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 1.8;
+        letter-spacing: 0.03em;
+    }
+    
+}

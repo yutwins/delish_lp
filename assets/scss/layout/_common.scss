@@ -1,0 +1,25 @@
+$layout-width-inner: 1080px;
+
+// ブレイクポイント
+$breakpoints: (
+    "sp": "(max-width: 767px)",
+    "tab": "(min-width: 768px) and (max-width: #{$layout-width-inner - 1px})",
+    "pc": "(min-width: #{$layout-width-inner})",
+);
+// メディアクエリ
+@mixin mq($breakpoint: sp) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+
+.main {
+    width: calc(100% - 26.4%); // お問い合わせフォーム部分の幅を引く
+}
+
+.inner {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
