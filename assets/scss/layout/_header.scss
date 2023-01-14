@@ -8,6 +8,7 @@
     left: 0;
     z-index: 100;
     border-bottom: 1px solid $gray_color01;
+    background-color: #fff;
 
     &-inner {
         height: 100%;
@@ -29,7 +30,7 @@
         display: flex;
         align-items: center;
         gap: 25px;
-        padding-right: 18px;
+        padding-right: 28px;
     }
 
     &__list {
@@ -40,6 +41,10 @@
         font-weight: bold;
         line-height: 1.8;
         letter-spacing: 0.03em;
+
+        &:hover {
+            color: $base_color;
+        }
     }
     
 }

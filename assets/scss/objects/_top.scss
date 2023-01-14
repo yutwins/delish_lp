@@ -1,0 +1,154 @@
+@use "../foundation/global" as *;
+
+.top {
+    padding-top: 135px;
+    padding-bottom: 20px;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(/assets/images/top_bg.png) no-repeat center center / cover;
+        z-index: -1;
+    }
+
+    &-inner {
+        width: 83%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+    }
+
+    &-left {
+        width: 72.48%;
+        height: auto;
+    }
+
+    &-headArea {
+        width: 100%;
+        text-align: center;
+        position: relative;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background-color: #000;
+        }
+    }
+    &__head {
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        background-color: #fff;
+        padding: 0 24px;
+        font-size: 16px;
+        line-height: 1.8;
+
+        &--big {
+            padding-left: 7px;
+            font-size: 20px;
+        }
+    }
+
+    &__title {
+        margin-top: 22px;
+        font-size: 38px;
+        letter-spacing: 0.05em;
+    }
+
+    &__text {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 1.8;
+        letter-spacing: 0.08em;
+    }
+
+    &-achievement {
+        margin-top: 37px;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+
+        &__list {
+            width: 80px;
+            height: 80px;
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-right {
+        width: 38.6%;
+        height: auto;
+        padding-top: 33px;
+        
+        &__img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &-slider {
+        width: 91.5%;
+        max-width: 862px;
+        margin: 48px auto 0;
+
+        .slick-slide {
+            transform: scale(0.9);/*左右の画像のサイズを80%に*/
+            transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
+        }
+        .slick-slide.slick-center{
+            transform: scale(1);/*中央の画像のサイズだけ等倍に*/
+            opacity: 1;/*透過なし*/
+        }
+
+        &__list {
+            width: 157px;
+            height: auto;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        &__hashtag {
+            position: absolute;
+            top: -28px;
+            left: -10px;
+            font-size: 40px;
+            line-height: 1.8;
+            font-weight: 900;
+            letter-spacing: 0.05em;
+            color: $gray_color02;
+        }
+
+        &__head {
+            position: relative;
+            z-index: 2;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 1.8;
+            letter-spacing: 0.02em;
+        }
+
+        &__img {
+            width: 100%;
+            height: auto;
+            margin-top: 16px;
+        }
+    }
+}
