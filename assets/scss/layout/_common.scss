@@ -1,3 +1,5 @@
+@use "../foundation/color" as *;
+
 $layout-width-inner: 1080px;
 
 // ブレイクポイント
@@ -19,7 +21,18 @@ $breakpoints: (
 }
 
 .inner {
-    width: 1200px;
+    width: 742px;
     max-width: 100%;
     margin: 0 auto;
+}
+
+.section__title {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-align: center;
+
+    &--orange {
+        color: $theme01_color;
+    }
 }

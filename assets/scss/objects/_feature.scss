@@ -1,0 +1,192 @@
+@use "../foundation/global" as *;
+
+.feature {
+    padding-top: 80px;
+    padding-bottom: 79px;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 535px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(/assets/images/feature_bg.png) no-repeat center center / cover;
+        z-index: -1;
+    }
+
+    &-inner {
+        // max-width: calc(100% - 80px); //83%
+        max-width: 83%;
+        margin: 0 auto;
+    }
+
+    &__subTitle {
+        margin-top: 38px;
+        font-size: 15px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    &-nav {
+        width: 100%;
+        margin-top: 53px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5%;
+
+        &__item {
+            display: block;
+            width: 23.87%;
+            max-width: 210px;
+            height: 270px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba($theme03_color, .25);
+            border-radius: 4px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+
+            &:hover {
+                background-color: $theme01_color;
+
+                .feature-nav__itemHead {
+                    color: #fff;
+                }
+                .feature-nav__itemSubHead {
+                    color: #fff;
+                }
+            }
+
+            &--num {
+                color: $theme04_color;
+                font-size: 50px;
+                line-height: 1.2;
+                font-weight: bold;
+                font-family: $MS;
+                position: absolute;
+                top: -7px;
+                left: 3px;
+            }
+        }
+
+        &__iconArea {
+            height: 55.5%;
+            position: relative;
+            z-index: 2;
+        }
+        &__icon {
+            height: auto;
+        }
+        &__icon01 {
+            width: 130px;
+            margin-top: 30px;
+        }
+        &__icon02 {
+            width: 152px;
+            margin-top: 37px;
+        }
+        &__icon03 {
+            width: 155px;
+            margin-top: 36px;
+        }
+        &__icon04 {
+            width: 168px;
+            margin-top: 30px;
+        }
+
+        &__itemHead {
+            margin-top: 15px;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 0.03em;
+            color: $theme01_color;
+        }
+        &__itemSubHead {
+            font-size: 13px;
+            font-weight: 500;
+        }
+    }
+
+
+    &-items {
+        margin-top: 106px;
+    }
+
+    &-item {
+        width: 93.3%; // 730 / inner幅(782px)  
+        max-width: 730px;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:not(:first-child) {
+            margin-top: 90px;
+        }
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        &__imgArea {
+
+        }
+        &__img {
+            height: auto;
+        }
+        &__img01 {
+           width: 226px; 
+        }
+        &__img02 {
+            width: 242px;
+        }
+        &__img03 {
+            width: 250px;
+        }
+        &__img04 {
+            width: 254px;
+        }
+
+        &__textArea {
+            width: 61%;
+        }
+
+        &__num {
+            font-family: $MS;
+            font-size: 36px;
+            font-weight: bold;
+            color: $theme01_color;
+            position: relative;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                top: 50%;
+                left: 8px;
+                background-color: $theme04_color;
+                border-radius: 50%;
+                transform: translateY(-50%);
+                z-index: -1;
+            }
+        }
+        &__head {
+            margin-top: 28px;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        &__text {
+            margin-top: 30px;
+            font-size: 13px;
+            letter-spacing: 0.05em;
+        }
+    }
+
+}
