@@ -71,6 +71,13 @@ p {
   color: #FF550C;
 }
 
+.section__subTitle {
+  margin-top: 38px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+
 .header {
   width: 73.6%;
   height: 80px;
@@ -373,12 +380,6 @@ p {
   max-width: 83%;
   margin: 0 auto;
 }
-.feature__subTitle {
-  margin-top: 38px;
-  font-size: 15px;
-  font-weight: 500;
-  text-align: center;
-}
 .feature-nav {
   width: 100%;
   margin-top: 53px;
@@ -417,6 +418,7 @@ p {
 }
 .feature-nav__item:hover .feature-nav__itemSubHead {
   color: #fff;
+  font-weight: bold;
 }
 .feature-nav__item--num {
   color: #FFDACB;
@@ -484,7 +486,13 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.feature-item:not(:first-child) {
+.feature-item:nth-child(2) {
+  margin-top: 90px;
+}
+.feature-item:nth-child(3) {
+  margin-top: 90px;
+}
+.feature-item:nth-child(4) {
   margin-top: 90px;
 }
 .feature-item:nth-child(even) {
@@ -543,6 +551,181 @@ p {
   margin-top: 30px;
   font-size: 13px;
   letter-spacing: 0.05em;
+}
+
+.effect {
+  padding-top: 70px;
+  padding-bottom: 75px;
+  background-color: #FFF1EC;
+}
+.effect-inner {
+  max-width: calc(100% - 80px);
+  margin: 0 auto;
+}
+.effect-ex {
+  width: 742px;
+  max-width: 100%;
+  height: auto;
+  margin: 63px auto 70px;
+  padding: 0 5.3%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4.5%;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.effect-ex__left {
+  width: 24.1%;
+  width: 180px;
+  position: relative;
+}
+.effect-ex__img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+.effect-ex__right {
+  width: 59.4%;
+  padding: 19px 0 18px 0;
+}
+.effect-ex__headArea {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+.effect-ex__headIconArea {
+  width: 70px;
+  height: 70px;
+}
+.effect-ex__headIcon {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.effect-ex__headTextArea--small {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+.effect-ex__headTextArea--big {
+  margin-top: 3px;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+.effect-ex__smallTextArea {
+  height: 16px;
+  text-align: right;
+}
+.effect-ex__smallText {
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 500;
+  text-align: right;
+  display: inline-block;
+  position: relative;
+}
+.effect-ex__smallText::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 50%;
+  left: -17px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url(/assets/images/実績アイコン.png) no-repeat center center/cover;
+}
+.effect-ex__ul {
+  margin-top: 15px;
+}
+.effect-ex__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 3px;
+}
+.effect-ex__list:nth-child(1) {
+  padding-bottom: 9px;
+}
+.effect-ex__list:nth-child(2) {
+  padding-bottom: 9px;
+}
+.effect-ex__list:nth-child(2) {
+  border-top: 1px solid #E2E2E2;
+}
+.effect-ex__list:nth-child(3) {
+  border-top: 1px solid #E2E2E2;
+}
+.effect-ex__listTerm {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+.effect-ex__listDesc {
+  font-family: "Montserrat", sans-serif;
+}
+.effect-ex__listText {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #FF550C;
+  letter-spacing: 0.05em;
+}
+.effect-ex__listText .arrow--black {
+  width: 20px;
+  margin: 0 5px;
+  padding-bottom: 5px;
+}
+.effect-ex__listText--num {
+  font-size: 26px;
+  color: #3D3D3D;
+}
+.effect-ex__listText--kanji {
+  margin-left: 5px;
+  font-size: 16px;
+  color: #000;
+}
+.effect-ex__listText--kana {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #000;
+}
+.effect-main {
+  width: 747px;
+  max-width: 100%;
+  margin: 60px auto 0;
+}
+.effect-main__img {
+  width: 100%;
+  height: auto;
 }
 
 .contact {

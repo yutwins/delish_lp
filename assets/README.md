@@ -18,3 +18,5 @@
 ◉Featureセクション
 ・背景色の画像を疑似要素で入れている部分
 ・navのhoverアクション部分
+・itemの番号の背景の丸部分
+・itemのflex-direction: row-reverse;部分とnot(:first-child)部分
