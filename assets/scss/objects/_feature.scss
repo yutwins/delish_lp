@@ -128,7 +128,7 @@
         // }↓　上記と同義
         @for $i from 2 through 4 {
             &:nth-child(#{$i}) {
-                margin-top: 90px;
+                padding-top: 90px;
             }
         }
         &:nth-child(even) {
