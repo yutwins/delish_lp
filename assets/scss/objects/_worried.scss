@@ -4,6 +4,11 @@
     padding-top: 104px;
     padding-bottom: 75px;
 
+    @include mq("sp") {
+        padding-top: 47px;
+        padding-bottom: 45px;
+    }
+
     &-inner {
         width: 83%;
         margin: 0 auto;
@@ -14,6 +19,10 @@
         font-weight: bold;
         text-align: center;
         letter-spacing: 0.05em;
+
+        @include mq("sp") {
+            font-size: 22px;
+        }
     }
     
     &-ul {
@@ -22,25 +31,68 @@
         justify-content: center;
         gap: 4.6%;
         margin-top: 50px;
+
+        @include mq("sp") {
+            margin-top: 40px;
+            display: block;
+        }
     }
     
     &__list {
-        width: 250px;
-        height: 210px;
+        width: 238px;
+        height: 198px;
         position: relative;
         text-align: center;
+        box-shadow: 0 4px 20px rgba(#000, .25);
+        border-radius: 50%;
+
+        @include mq("sp") {
+            width: 220px;
+            height: 183px;
+            margin: 0 auto;
+        }
 
         &:nth-child(1) {
 
             .worried__listText {
                 padding-top: 65px;
+
+                @include mq("sp") {
+                    padding-top: 50px;
+                }
+            }
+            .worried__listIcon {
+                width: 66px;
+                height: 59px;
+                margin-top: 11px;
+
+                @include mq("sp") {
+                    margin-top: 9px;
+                }
             }
         }
         &:nth-child(2),
         &:nth-child(3) {
 
+            @include mq("sp") {
+                margin-top: 20px;
+            }
+
             .worried__listText {
                 padding-top: 45px;
+
+                @include mq("sp") {
+                    padding-top: 37px;
+                }
+            }
+            .worried__listIcon {
+                width: 53px;
+                height: 53px;
+                margin-top: 8px;
+
+                @include mq("sp") {
+                    margin-top: 5px;
+                }
             }
         }
     }
@@ -59,22 +111,6 @@
         height: 80px;
         display: grid;
         place-items: center;
-
-        &:nth-child(1) {
-
-            .worried__listIcon {
-                width: 66px;
-                height: 59px;
-            }
-        }
-        &:nth-child(2),
-        &:nth-child(3) {
-            
-            .worried__listIcon {
-                width: 53px;
-                height: 53px;
-            }
-        }
     }
 
     &__listBg {

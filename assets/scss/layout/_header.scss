@@ -10,16 +10,34 @@
     border-bottom: 1px solid $gray_color01;
     background-color: #fff;
 
+    @media(max-width: 1080px) {
+        width: 100%;
+    }
+    @include mq("sp") {
+        height: 60px;
+    }
+
     &-inner {
         height: 100%;
         padding: 0 40px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include mq("tab") {
+            padding: 0 25px;
+        }
+        @include mq("sp") {
+            padding: 0 20px;
+        }
     }
 
     &-logoArea {
         width: 160px;
+
+        @include mq("sp") {
+            width: 148px;
+        }
     }
     &__logo {
         width: 100%;
@@ -31,6 +49,10 @@
         align-items: center;
         gap: 25px;
         padding-right: 28px;
+
+        @include mq("sp") {
+            display: none;
+        }
     }
 
     &__list {
@@ -47,4 +69,99 @@
         }
     }
     
+}
+
+
+
+.drawer {
+
+    &-icon {
+        width: 20px;
+        height: 18px;
+        position: fixed;
+        top: 22px;
+        right: 21px;
+        z-index: 100;
+        display: none;
+
+        @include mq("sp") {
+            display: block;
+        }
+
+        &.clicked {
+
+            .drawer-icon__bar1 {
+                top: 8px;
+                transform: rotate(-45deg);
+            }
+            .drawer-icon__bar2 {
+                display: none;
+            }
+            .drawer-icon__bar3 {
+                top: 8px;
+                transform: rotate(45deg);
+            }
+        }
+
+        &__bars {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        &__bar1,
+        &__bar2,
+        &__bar3 {
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: $theme01_color;
+          border-radius: 6px;
+          transition: all 0.3s ease 0s;
+        }
+        &__bar1 {
+            top: 0;
+        }
+        &__bar2 {
+            top: 8px;
+        }
+        &__bar3 {
+            top: 16px;
+        }
+    }
+
+    &-content {
+        display: none;
+
+
+        @include mq("sp") {
+            
+            &.clicked {
+                display: block;
+                position: fixed;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                z-index: 100;
+                background-color: #fff;
+            }
+        }
+     
+        &__items {
+
+        }
+        &__item {
+            width: 100%;
+            height: 70px;
+            display: grid;
+            place-items: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+
+    &__btn {
+        margin-top: 40px;
+    }
 }

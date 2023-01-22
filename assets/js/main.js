@@ -1,5 +1,31 @@
 "use strict";
 
+// ドロワーの実装
+const drawerIcon = document.querySelector('.drawer-icon');
+const drawerContent = document.querySelector('.drawer-content');
+const drawerItem = document.querySelectorAll('.drawer-content__item');
+
+
+// drawerIconをクリックした際、drawerClickを実行
+drawerIcon.onclick = drawerClick;
+
+// drawerClick関数
+function drawerClick() {
+    drawerIcon.classList.toggle('clicked');
+    drawerContent.classList.toggle('clicked');
+    
+    return false;
+}
+
+for(let i = 0; i < drawerItem.length; i++) {
+    drawerItem[i].addEventListener('click', () => {
+        drawerClick();
+    });
+}
+
+
+
+
 // slider 部分の実装
 $('.top-slider').slick({
     autoplay: true,//自動的に動き出すか。初期値はfalse。
@@ -14,3 +40,15 @@ $('.top-slider').slick({
     arrows: false,
     dots: false,//下部ドットナビゲーションの表示
 });
+
+
+//qaセクションの実装
+const qaQ = document.querySelectorAll('.qa-q');
+const qaA = document.querySelectorAll('.qa-a');
+
+for(let i = 0; i < qaQ.length; i++) {
+    qaQ[i].addEventListener('click', function() {
+        this.classList.toggle('clicked');
+        this.nextElementSibling.classList.toggle('clicked');
+    });
+}
