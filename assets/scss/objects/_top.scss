@@ -44,7 +44,7 @@
     }
 
     &-left {
-        width: 72.48%;
+        width: 51.9%;
         height: auto;
 
         @include mq("sp") {
@@ -137,7 +137,8 @@
     }
 
     &-right {
-        width: 38.6%;
+        width: 37.5%;
+        max-width: 290px;
         height: auto;
         padding-top: 33px;
 
@@ -175,7 +176,7 @@
         &__hashtag {
             position: absolute;
             top: -28px;
-            left: -10px;
+            left: -2px;
             font-size: 40px;
             line-height: 1.8;
             font-weight: 900;
@@ -186,6 +187,7 @@
         &__head {
             position: relative;
             z-index: 2;
+            padding-left: 7px;
             font-size: 12px;
             font-weight: bold;
             line-height: 1.8;

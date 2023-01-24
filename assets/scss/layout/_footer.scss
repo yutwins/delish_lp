@@ -6,6 +6,13 @@
     height: 150px;
     position: relative;
 
+    @media (max-width: 1080px) {
+        margin-bottom: 100px;
+    }
+    @include mq("sp") {
+        height: 180px;
+    }
+
     &::before,
     &::after {
         content: "";
@@ -29,6 +36,10 @@
         padding-bottom: 10px;
         position: relative;
         z-index: 2;
+
+        @include mq("sp") {
+            padding-top: 30px;
+        }
     }
     
     &-ul {
@@ -36,9 +47,17 @@
         align-items: center;
         justify-content: center;
         gap: 100px;
+
+        @include mq("sp") {
+            display: block;
+        }
+
     }
     &__list {
         
+        @include mq("sp") {
+            text-align: center;
+        }
     }
     &__listItem {
         font-size: 12px;
@@ -50,7 +69,7 @@
         }
     }
 
-    &-copyright {
+    &__copyright {
         margin-top: 40px;
         font-size: 10px;
         font-weight: bold;

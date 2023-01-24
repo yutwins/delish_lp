@@ -14,6 +14,8 @@
 ＜Questions＞
 ・planセクションの「フィード10本」のところが、漢字もフォントファミリーがMontserratになっているが意図的か？
 
+・コピーライトがSPの時だけ色が違うのは意図的か？
+
 
 ＜メモ＞
 【カスタムコードで読み込んでいる部分まとめ】
@@ -48,3 +50,15 @@
 ・plan-item__priceText部分（span要素が含まれているため）
 ・plan-item__contentText部分（span要素が含まれているため）
 ・plan-graphUpper__listNote部分のtransformの実装
+
+
+◉Flow
+・サブタイトル部分（改行が含まれているため）
+
+
+◉Footer
+・背景画像部分を疑似要素で実装しているため
+
+
+◉Contact
+・チェックボックス部分

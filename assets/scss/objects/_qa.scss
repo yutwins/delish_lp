@@ -1,18 +1,18 @@
 @use "../foundation/global" as *;
 
 .qa {
-    padding-top: 70px;
-    padding-bottom: 80px;
-
-    @include mq("sp") {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
+    
     &-inner {
         width: 742px;
         max-width: 100%;
         margin: 0 auto;
+        padding-top: 70px;
+        padding-bottom: 80px;
+    
+        @include mq("sp") {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
     }
 
     &-items {
@@ -27,10 +27,17 @@
 
     &-item {
         width: 100%;
-        height: auto;
+        height: 60px;
         padding: 0 20px;
         background-color: $theme05_color;
-        border-radius: 4px 4px;
+        border-radius: 4px;
+        overflow: hidden;
+        transition: all 0.3s ease 0s;
+
+        &.clicked {
+            height: auto;
+            overflow: visible;
+        }
 
         @include mq("sp") {
             padding: 0 14px;
@@ -71,7 +78,6 @@
     &-q {
         padding: 20px 0;
         align-items: center;
-        position: relative;
         cursor: pointer;
 
         &.clicked {
@@ -110,7 +116,6 @@
     }
     
     &-a {
-        display: none;
         transform: translateY(-50%);
         transition: all 0.3s ease 0s;
         padding: 20px 0;
@@ -121,10 +126,12 @@
         }
 
         &__text {
+            padding-top: 3px;
             font-size: 14px;
             letter-spacing: 0.05em;
 
             @include mq("sp") {
+                padding-top: 2px;
                 font-size: 13px;
             }
         }
