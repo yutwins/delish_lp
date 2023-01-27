@@ -85,7 +85,7 @@
                     <a href="#" class="drawer-content__item">DELISH AGENTとは</a>
                     <a href="#" class="drawer-content__item">導入効果</a>
                     <a href="#" class="drawer-content__item">料金プラン</a>
-                    <a href="#" class="drawer-content__item">運用までの流れ</a>
+                    <a href="#" class="drawer-content__item">運用の流れ</a>
                     <a href="#" class="drawer-content__item">よくある質問</a>
                 </div>
                 <a href="#" class="cta__btn drawer__btn"><span class="cta__btn--text">お問い合わせはこちら</span></a>
@@ -185,8 +185,8 @@
             <div class="feature-inner">
                 <h2 class="section__title feature__title">DELISH AGENTは<br><span
                         class="section__title--orange">SNS担当者を月額定額制で<br class="sp-only"></span>導入できるサービスです</h2>
-                <p class="section__subTitle feature__subTitle">DELISH AGENTはグルメECフォロワー数No.1の「DELISH
-                    MALL」が運営する<br>飲食店・グルメ通販特化型のInstagram運用代行サービスです。</p>
+                <p class="section__subTitle feature__subTitle">DELISH AGENTは<br class="sp-only">グルメECフォロワー数No.1の<br class="sp-only">「DELISH
+                    MALL」が運営する<br>飲食店・グルメ通販特化型の<br class="sp-only">Instagram運用代行サービスです。</p>
                 <nav class="feature-nav">
                     <a href="#feature-item01" class="feature-nav__item">
                         <p class="feature-nav__item--num">01</p>
@@ -217,8 +217,12 @@
                     <a href="#feature-item03" class="feature-nav__item">
                         <p class="feature-nav__item--num">03</p>
                         <div class="feature-nav__iconArea">
-                            <img src="./images/feature_nav_icon03.png" alt="アイコン"
-                                class="feature-nav__icon feature-nav__icon03">
+                            <picture>
+                                <source srcset="./images/feature_nav_icon03.png" media="(min-width: 768px)"
+                                    class="feature-nav__icon feature-nav__icon03">
+                                <img src="./images/feature_nav_icon03_sp.png"
+                                    class="feature-nav__icon feature-nav__icon03">
+                            </picture>
                         </div>
                         <div class="feature-nav__textArea">
                             <p class="feature-nav__itemHead">完全丸投げ</p>
@@ -283,7 +287,7 @@
                             <p class="feature-item__num">03</p>
                             <p class="feature-item__head">アカウント開設から運用まで<br>ワンストップで支援します</p>
                             <p class="feature-item__text">
-                                Instagram運用において重要となるアカウント設計から投稿作業<br>
+                                Instagram運用において重要となるアカウント設計から投稿作業<br class="pc-only">
                                 ・分析までワンストップで行います。
                             </p>
                         </div>
@@ -352,15 +356,17 @@
                             <li class="effect-ex__list">
                                 <p class="effect-ex__listTerm">月間平均<br class="sp-only">Webクリック数</p>
                                 <div class="effect-ex__listDesc">
-                                    <p class="effect-ex__listText">12,162<span
-                                            class="effect-ex__listText--kana">クリック</span></p>
+                                    <div class="effect-ex__listTextArea">
+                                        <span class="effect-ex__listText--orange">12,162</span><span class="effect-ex__listText--kana">クリック</span>
+                                    </div>
                                 </div>
                             </li>
                             <li class="effect-ex__list">
                                 <p class="effect-ex__listTerm">月間平均売上</p>
                                 <div class="effect-ex__listDesc">
-                                    <p class="effect-ex__listText">824,523<span
-                                            class="effect-ex__listText--kanji">円</span></p>
+                                    <div class="effect-ex__listTextArea">
+                                        <span class="effect-ex__listText--orange">824,523</span><span class="effect-ex__listText--kanji">円</span>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -397,7 +403,7 @@
                             <div class="plan-item__content">
                                 <p class="plan-item__contentHead">投稿内容</p>
                                 <p class="plan-item__contentText">フィード<span
-                                        class="plan-item__contentText--num">10</span>本 / <span
+                                        class="plan-item__contentText--num">10</span>本 <span class="plan-item__contentText--thin">/</span> <span
                                         class="plan-item__contentText--small">月</span></p>
                             </div>
                         </div>
@@ -412,7 +418,7 @@
                             <div class="plan-item__content">
                                 <p class="plan-item__contentHead">投稿内容</p>
                                 <p class="plan-item__contentText">フィード<span
-                                        class="plan-item__contentText--num">20</span>本 / <span
+                                        class="plan-item__contentText--num">20</span>本 <span class="plan-item__contentText--thin">/</span> <span
                                         class="plan-item__contentText--small">月</span></p>
                             </div>
                         </div>
@@ -428,7 +434,7 @@
                             <div class="plan-item__content">
                                 <p class="plan-item__contentHead">投稿内容</p>
                                 <p class="plan-item__contentText">フィード<span
-                                        class="plan-item__contentText--num">30</span>本 / <span
+                                        class="plan-item__contentText--num">30</span>本 <span class="plan-item__contentText--thin">/</span> <span
                                         class="plan-item__contentText--small">月</span></p>
                             </div>
                         </div>
@@ -466,6 +472,16 @@
                         <p class="plan-option__head">オプション</p>
                         <div class="plan-option__items">
                             <div class="plan-option__item">
+                                <img src="./images/plan_option_icon04.png" alt="アイコン" class="plan-option__icon plan-option__icon04">
+                                <p class="plan-option__text">ショップタグ設定</p>
+                            </div>
+                            <div class="plan-option__item">
+                                <img src="./images/plan_option_icon05.png" alt="アイコン" class="plan-option__icon plan-option__icon05">
+                                <p class="plan-option__text">Google Analytics設定</p>
+                            </div>
+                        </div>
+                        <div class="plan-option__items">
+                            <div class="plan-option__item">
                                 <img src="./images/plan_option_icon01.png" alt="アイコン" class="plan-option__icon">
                                 <p class="plan-option__text">投稿用撮影（出張）</p>
                             </div>
@@ -480,7 +496,7 @@
                         </div>
                     </div>
                 </div>
-                <h2 class="section__title plan__titleCenter">他者と<span class="section__title--orange">比較</span>してみると...
+                <h2 class="section__title plan__titleCenter">他社と<span class="section__title--orange">比較</span>してみると...
                 </h2>
                 <div class="plan-graphArea">
                     <div class="plan-graphUpper">
@@ -533,7 +549,7 @@
 
         <section class="flow">
             <div class="flow-inner">
-                <h2 class="section__title flow__title">運用までの流れ</h2>
+                <h2 class="section__title flow__title">運用の流れ</h2>
                 <p class="section__subTitle flow__subTitle">DELISH AGENTではしっかり時間をかけて<br class="sp-only">運用準備をさせていただきます。<br>お申し込みからInstagram運用開始まで、<br class="sp-only">約1ヶ月程お時間をいただいております。
                 </p>
                 <div class="flow-main">
@@ -595,9 +611,8 @@
         <footer class="footer">
             <div class="footer-inner">
                 <ul class="footer-ul">
-                    <li class="footer__list"><a href="#" class="footer__listItem">利用規約</a></li>
                     <li class="footer__list"><a href="#" class="footer__listItem">プライバシーポリシー</a></li>
-                    <li class="footer__list"><a href="#" class="footer__listItem">会社概要</a></li>
+                    <li class="footer__list"><a href="#" class="footer__listItem">運営会社</a></li>
                 </ul>
                 <p class="footer__copyright">Copyright &copy; 2023 DELISH AGENT All rights</p>
             </div>
@@ -662,7 +677,7 @@
                             </label>
                         </dt>
                         <dd class="contact-form__input">
-                            <textarea name="" id="your-message" placeholder="導入を検討しているため、料金の詳細を知りたいです。"></textarea>
+                            <textarea name="" id="your-message" placeholder="私たちが今運用しているアカウントをそのまま運用してもらうことは可能でしょうか。"></textarea>
                         </dd>
                     </div>
                 </dl>

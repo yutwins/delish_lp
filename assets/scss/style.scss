@@ -12,6 +12,7 @@ Foundation - ファウンデーション
 @use "layout/common" as *;
 @use "layout/header" as *;
 @use "layout/footer" as *;
+@use "layout/pageHeader" as *;
 
 /* ========================================================================
 	Objects - オブジェクト
@@ -25,3 +26,4 @@ Foundation - ファウンデーション
 @use "objects/flow" as *;
 @use "objects/qa" as *;
 @use "objects/contact" as *;
+@use "objects/thanks" as *;

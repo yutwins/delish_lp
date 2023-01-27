@@ -21,6 +21,10 @@
         height: 100%;
         top: 0;
         background: url(/assets/images/top_bg.png) no-repeat center center / cover;
+        
+        @include mq("sp") {
+            background: url(/assets/images/top_bg_sp.png) no-repeat center center / cover;
+        }
     }
     &::after {
         height: 62px;
@@ -30,6 +34,7 @@
 
     &-inner {
         width: 83%;
+        max-width: 800px;
         margin: 0 auto;
         display: flex;
         justify-content: center;
@@ -77,6 +82,10 @@
         padding: 0 24px;
         font-size: 16px;
         line-height: 1.8;
+
+        @include mq("sp") {
+            padding: 0 10px;
+        }
 
         &--big {
             padding-left: 7px;
@@ -153,30 +162,46 @@
     }
 
     &-slider {
-        width: 91.5%;
-        max-width: 862px;
-        margin: 48px auto 0;
+        // width: 91.5%;
+        // max-width: 862px;
+        margin: 65px auto 0;
+
+        @include mq("sp") {
+            margin: 30px auto 0;
+        }
 
         .slick-slide {
-            transform: scale(0.9);/*左右の画像のサイズを80%に*/
+            transform: scale(0.8);/*左右の画像のサイズを80%に*/
             transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
         }
         .slick-slide.slick-center{
             transform: scale(1);/*中央の画像のサイズだけ等倍に*/
             opacity: 1;/*透過なし*/
+
+            .top-slider__head {
+                font-weight: bold;
+
+                @include mq("sp") {
+                    font-size: 13px;
+                }
+            }
         }
 
         &__list {
-            width: 157px;
+            width: 170px;
             height: auto;
             margin: 0 10px;
             position: relative;
+
+            @include mq("sp") {
+                margin: 0;
+            }
         }
 
         &__hashtag {
             position: absolute;
             top: -28px;
-            left: -2px;
+            left: -4px;
             font-size: 40px;
             line-height: 1.8;
             font-weight: 900;
@@ -188,16 +213,24 @@
             position: relative;
             z-index: 2;
             padding-left: 7px;
-            font-size: 12px;
-            font-weight: bold;
+            font-size: 13px;
+            font-weight: normal;
             line-height: 1.8;
             letter-spacing: 0.02em;
+
+            @include mq("sp") {
+                font-size: 12px;
+            }
         }
 
         &__img {
             width: 100%;
             height: auto;
             margin-top: 16px;
+
+            @include mq("sp") {
+                margin-top: 5px;
+            }
         }
     }
 }

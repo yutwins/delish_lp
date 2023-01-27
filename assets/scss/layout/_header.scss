@@ -9,6 +9,8 @@
     z-index: 100;
     border-bottom: 1px solid $gray_color01;
     background-color: #fff;
+    box-shadow: 0 3px 4px rgba(207, 207, 207, .25);
+
 
     @media(max-width: 1080px) {
         width: 100%;
@@ -131,15 +133,18 @@
     }
 
     &-content {
-        opacity: 0;
-        transition: all 0.3s ease 0s;
-
+        display: none;
+        
         @include mq("sp") {
+            opacity: 0;
+            display: block;
+            transition: all 0.3s ease 0s;
             position: fixed;
             top: 60px;
             left: 0;
             visibility: hidden;
             height: 0;
+            z-index: -2;
             
             &.clicked {
                 opacity: 1;
