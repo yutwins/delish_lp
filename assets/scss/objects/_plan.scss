@@ -38,7 +38,9 @@
     }
     
     &__subTitle {
-        font-weight: normal;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 40px;
         color: #fff;
 
         @include mq("sp") {

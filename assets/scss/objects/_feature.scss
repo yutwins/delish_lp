@@ -27,7 +27,6 @@
     }
 
     &-inner {
-        // max-width: calc(100% - 80px); //83%
         max-width: 83%;
         margin: 0 auto;
 
@@ -203,7 +202,7 @@
         }
 
         &__textArea {
-
+            width: 173px;
         }
         &__itemHead {
             margin-top: 15px;
