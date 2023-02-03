@@ -28,11 +28,26 @@ for(let i = 0; i < drawerItem.length; i++) {
 
 // slider 部分の実装
 $('.top-slider').slick({
+    // autoplay: true,//自動的に動き出すか。初期値はfalse。
+    // infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+    // speed: 300,
+    // autoplaySpeed: 3000,//スライドのスピード。初期値は300。
+    // slidesToShow: 4,//スライドを画面に3枚見せる
+    // slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
+    // centerMode: true,//要素を中央ぞろえにする
+    // variableWidth: true,//幅の違う画像の高さを揃えて表示
+    // arrows: false,
+    // dots: false,//下部ドットナビゲーションの表示
+    // pauseOnFocus: false,
+    // pauseOnHover: false,
+    // pauseOnDotsHover: false
+
+    // 下記実験用
     autoplay: true,//自動的に動き出すか。初期値はfalse。
     infinite: true,//スライドをループさせるかどうか。初期値はtrue。
     speed: 300,
-    autoplaySpeed: 3000,//スライドのスピード。初期値は300。
-    slidesToShow: 4,//スライドを画面に3枚見せる
+    autoplaySpeed: 3000,
+    slidesToShow: 4,//スライドを画面に4枚見せる
     slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
     centerMode: true,//要素を中央ぞろえにする
     variableWidth: true,//幅の違う画像の高さを揃えて表示
@@ -40,7 +55,8 @@ $('.top-slider').slick({
     dots: false,//下部ドットナビゲーションの表示
     pauseOnFocus: false,
     pauseOnHover: false,
-    pauseOnDotsHover: false
+    pauseOnDotsHover: false,
+    // useTransform: false
 });
 
 
